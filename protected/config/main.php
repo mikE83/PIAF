@@ -8,7 +8,7 @@ $ddts = date_default_timezone_set('America/Mexico_City');
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Piaf',
-	'defaultController' => 'site/login',
+	'defaultController' => 'site/index',
 
 	// preloading 'log' component
 	'preload'=>array('log'),
@@ -17,6 +17,7 @@ return array(
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
+		'application.widgets.bootstrap.*',
 	),
 
 	'modules'=>array(
